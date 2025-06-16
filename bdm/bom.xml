@@ -1,16 +1,51 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <businessObjectModel xmlns="http://documentation.bonitasoft.com/bdm-xml-schema/1.0" modelVersion="1.0">
     <businessObjects>
-        <businessObject qualifiedName="com.company.model.BusinessObject">
+        <businessObject qualifiedName="com.company.model.BusinessOrder">
             <fields>
-                <field type="BOOLEAN" length="255" name="encomendaConforme" nullable="true" collection="false"/>
-                <field type="TEXT" length="255" name="tipoProduto" nullable="true" collection="false"/>
-                <field type="BOOLEAN" length="255" name="encomendaDanificada" nullable="true" collection="false"/>
-                <field type="STRING" length="255" name="qualidade" nullable="true" collection="false">
-                    <description>Sim, Não, Talvez</description>
-                </field>
-                <field type="STRING" length="255" name="temDocumentacao" nullable="true" collection="false"/>
-                <field type="STRING" length="255" name="guiaRemessa" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="is_produto_software" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="is_encomenda_danificada" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="is_tem_documentacao" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="is_guia_remessa" nullable="true" collection="false"/>
+                <field type="INTEGER" length="255" name="id" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="ecl_numero" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="cliente_id" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="fornecedor_id" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="fornecedor_classificacao" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="fornecedor_qualificado" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="ecf_numero" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="produtos" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="is_fotos_anexadas" nullable="true" collection="false"/>
+                <field type="OFFSETDATETIME" length="255" name="recebido_em" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="is_recebido_por" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="is_embalagem_ok" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="is_documentacao_ok" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="is_produto_devolvido" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="observacoes" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="is_finalizado" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="var1_string" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="var2_string" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="var3_string" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="var4_boolean" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="var5_boolean" nullable="true" collection="false"/>
+                <field type="INTEGER" length="255" name="var6_int" nullable="true" collection="false"/>
+                <field type="FLOAT" length="255" name="var7_int" nullable="true" collection="false"/>
+                <field type="DOUBLE" length="255" name="var8_double" nullable="true" collection="false"/>
+                <field type="DOUBLE" length="255" name="var9_double" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="is_guia_assinada" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="is_fotos_tiradas" nullable="true" collection="false"/>
+                <field type="INTEGER" length="255" name="is_produto_conforme" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.company.model.Produto">
+            <fields>
+                <field type="INTEGER" length="255" name="id" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="nome_produto" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="tipo_produto" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="produto_conforme" nullable="true" collection="false"/>
             </fields>
             <uniqueConstraints/>
             <queries/>

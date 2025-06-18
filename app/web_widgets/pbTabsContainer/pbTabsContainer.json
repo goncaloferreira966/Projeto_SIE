@@ -4,7 +4,7 @@
   "type" : "container",
   "custom" : false,
   "modelVersion" : "2.6",
-  "lastUpdate" : 1748356870691,
+  "lastUpdate" : 1750260080815,
   "description" : "Multiple groups of widgets, each group in a tab",
   "template" : "@pbTabsContainer.tpl.html",
   "properties" : [

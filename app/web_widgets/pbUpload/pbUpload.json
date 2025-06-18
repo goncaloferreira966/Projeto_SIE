@@ -4,7 +4,7 @@
   "type" : "widget",
   "custom" : false,
   "modelVersion" : "2.6",
-  "lastUpdate" : 1750260080715,
+  "lastUpdate" : 1748356870738,
   "description" : "File chooser for uploading a document to a form",
   "template" : "@pbUpload.tpl.html",
   "controller" : "@pbUpload.ctrl.js",

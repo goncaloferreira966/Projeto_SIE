@@ -18,7 +18,7 @@
       "artifactId" : "bonita-admin-application",
       "version" : "10.2.0",
       "classifier" : "application",
-      "file" : "/Users/goncaloferreira/.m2/repository/org/bonitasoft/web/application/bonita-admin-application/10.2.0/bonita-admin-application-10.2.0-application.zip"
+      "file" : "C:\\Users\\joels\\.m2\\repository\\org\\bonitasoft\\web\\application\\bonita-admin-application\\10.2.0\\bonita-admin-application-10.2.0-application.zip"
     }
   } ],
   "issues" : [ ]

@@ -4,7 +4,7 @@
   "type" : "container",
   "custom" : false,
   "modelVersion" : "2.6",
-  "lastUpdate" : 1750260080819,
+  "lastUpdate" : 1748356870368,
   "description" : "Group of widgets used to define the arrangement of the page elements. Its content is display like in modal.",
   "template" : "@pbModalContainer.tpl.html",
   "controller" : "@pbModalContainer.ctrl.js",

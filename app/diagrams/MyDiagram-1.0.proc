@@ -335,15 +335,26 @@
         <dynamicLabel xmi:type="expression:Expression" xmi:id="_ZXg_YjsFEfCzS-usCnYC3g" name="" content="" returnTypeFixed="true"/>
         <dynamicDescription xmi:type="expression:Expression" xmi:id="_ZXg_YTsFEfCzS-usCnYC3g" name="" content="" returnTypeFixed="true"/>
         <stepSummary xmi:type="expression:Expression" xmi:id="_ZXhmcDsFEfCzS-usCnYC3g" name="" content="" returnTypeFixed="true"/>
-        <operations xmi:type="expression:Operation" xmi:id="_qShP4kyIEfC2ApPi8dSCug">
-          <leftOperand xmi:type="expression:Expression" xmi:id="_qShP40yIEfC2ApPi8dSCug" name="businessOrder" content="businessOrder" type="TYPE_VARIABLE" returnType="com.company.model.BusinessOrder">
-            <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_qShP5EyIEfC2ApPi8dSCug" documentation="Receber uma encomenda do fornecedor" name="businessOrder" dataType="_R3vNkDsAEfCzS-usCnYC3g" className="com.company.model.BusinessOrder"/>
+        <operations xmi:type="expression:Operation" xmi:id="_p_oW0EyNEfCfvtexce43cQ">
+          <leftOperand xmi:type="expression:Expression" xmi:id="_p_oW0UyNEfCfvtexce43cQ" name="businessOrder" content="businessOrder" type="TYPE_VARIABLE" returnType="com.company.model.BusinessOrder">
+            <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_vsADwEyNEfCfvtexce43cQ" documentation="Receber uma encomenda do fornecedor" name="businessOrder" dataType="_R3vNkDsAEfCzS-usCnYC3g" className="com.company.model.BusinessOrder"/>
           </leftOperand>
-          <rightOperand xmi:type="expression:Expression" xmi:id="_qShP5UyIEfC2ApPi8dSCug" name="businessOrderInput.var6_int" content="businessOrderInput?.var6_int" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Integer">
-            <referencedElements xmi:type="process:ContractInput" xmi:id="_qShP5kyIEfC2ApPi8dSCug" name="businessOrderInput" type="COMPLEX" createMode="false"/>
+          <rightOperand xmi:type="expression:Expression" xmi:id="_p_oW00yNEfCfvtexce43cQ" name="businessOrderInput.is_via_guia_entregue" content="businessOrderInput?.is_via_guia_entregue" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean">
+            <referencedElements xmi:type="process:ContractInput" xmi:id="_yhfqMEyNEfCfvtexce43cQ" name="businessOrderInput" type="COMPLEX" createMode="false"/>
           </rightOperand>
-          <operator xmi:type="expression:Operator" xmi:id="_qShP50yIEfC2ApPi8dSCug" type="JAVA_METHOD" expression="setVar6_int">
-            <inputTypes>java.lang.Integer</inputTypes>
+          <operator xmi:type="expression:Operator" xmi:id="_p_oW1UyNEfCfvtexce43cQ" type="JAVA_METHOD" expression="setIs_via_guia_entregue">
+            <inputTypes>java.lang.Boolean</inputTypes>
+          </operator>
+        </operations>
+        <operations xmi:type="expression:Operation" xmi:id="_xg-y8EyOEfCfvtexce43cQ">
+          <leftOperand xmi:type="expression:Expression" xmi:id="_xg-y8UyOEfCfvtexce43cQ" name="businessOrder" content="businessOrder" type="TYPE_VARIABLE" returnType="com.company.model.BusinessOrder">
+            <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_x2o54EyOEfCfvtexce43cQ" documentation="Receber uma encomenda do fornecedor" name="businessOrder" dataType="_R3vNkDsAEfCzS-usCnYC3g" className="com.company.model.BusinessOrder"/>
+          </leftOperand>
+          <rightOperand xmi:type="expression:Expression" xmi:id="_xg-y8kyOEfCfvtexce43cQ" name="newScript()" content="businessOrder?.is_recebido_por" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.time.OffsetDateTime">
+            <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_vvApkEyPEfCfvtexce43cQ" documentation="Receber uma encomenda do fornecedor" name="businessOrder" dataType="_R3vNkDsAEfCzS-usCnYC3g" className="com.company.model.BusinessOrder"/>
+          </rightOperand>
+          <operator xmi:type="expression:Operator" xmi:id="_xg-y80yOEfCfvtexce43cQ" type="JAVA_METHOD" expression="setRecebido_em">
+            <inputTypes>java.time.OffsetDateTime</inputTypes>
           </operator>
         </operations>
         <loopCondition xmi:type="expression:Expression" xmi:id="_ZXhmcTsFEfCzS-usCnYC3g" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
@@ -352,11 +363,14 @@
         <iteratorExpression xmi:type="expression:Expression" xmi:id="_ZXhmdTsFEfCzS-usCnYC3g" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
         <completionCondition xmi:type="expression:Expression" xmi:id="_ZXhmdDsFEfCzS-usCnYC3g" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
         <formMapping xmi:type="process:FormMapping" xmi:id="_IY8GWUyIEfC2ApPi8dSCug">
-          <targetForm xmi:type="expression:Expression" xmi:id="_lZ_lQEyJEfC2ApPi8dSCug" name="newForm1" content="10574800-e4f0-47b8-9bac-c8e5c52f9756" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+          <targetForm xmi:type="expression:Expression" xmi:id="_2OSsEEyNEfCfvtexce43cQ" name="newForm4" content="7e90c228-c74b-439a-8e17-742755a85ff4" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
         </formMapping>
         <contract xmi:type="process:Contract" xmi:id="_IY8GWEyIEfC2ApPi8dSCug">
-          <inputs xmi:type="process:ContractInput" xmi:id="_qShP4EyIEfC2ApPi8dSCug" name="businessOrderInput" type="COMPLEX" dataReference="businessOrder" createMode="false">
-            <inputs xmi:type="process:ContractInput" xmi:id="_qShP4UyIEfC2ApPi8dSCug" name="var6_int" type="INTEGER" createMode="false"/>
+          <inputs xmi:type="process:ContractInput" xmi:id="_p_kscEyNEfCfvtexce43cQ" name="businessOrderInput" type="COMPLEX" dataReference="businessOrder" createMode="false">
+            <inputs xmi:type="process:ContractInput" xmi:id="_p_kscUyNEfCfvtexce43cQ" name="is_via_guia_entregue" type="BOOLEAN" createMode="false"/>
+            <inputs xmi:type="process:ContractInput" xmi:id="_sdMwAEyOEfCfvtexce43cQ" name="recebido_em" type="OFFSETDATETIME">
+              <mapping xmi:type="process:ContractInputMapping" xmi:id="_sdMwAUyOEfCfvtexce43cQ"/>
+            </inputs>
           </inputs>
         </contract>
         <expectedDuration xmi:type="expression:Expression" xmi:id="_IY8GW0yIEfC2ApPi8dSCug" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
@@ -390,58 +404,6 @@
           </inputs>
         </contract>
         <expectedDuration xmi:type="expression:Expression" xmi:id="_NUKDLEyIEfC2ApPi8dSCug" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
-      </elements>
-      <elements xmi:type="process:Task" xmi:id="_WApnQEyKEfC2ApPi8dSCug" name="Step1" actor="_R3vNdzsAEfCzS-usCnYC3g">
-        <dynamicLabel xmi:type="expression:Expression" xmi:id="_KvqbMUyKEfC2ApPi8dSCug" name="" content="" returnTypeFixed="true"/>
-        <dynamicDescription xmi:type="expression:Expression" xmi:id="_KvqbMEyKEfC2ApPi8dSCug" name="" content="" returnTypeFixed="true"/>
-        <stepSummary xmi:type="expression:Expression" xmi:id="_KvqbMkyKEfC2ApPi8dSCug" name="" content="" returnTypeFixed="true"/>
-        <operations xmi:type="expression:Operation" xmi:id="_cbarQkyKEfC2ApPi8dSCug">
-          <leftOperand xmi:type="expression:Expression" xmi:id="_cbarQ0yKEfC2ApPi8dSCug" name="businessOrder" content="businessOrder" type="TYPE_VARIABLE" returnType="com.company.model.BusinessOrder">
-            <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_cbarREyKEfC2ApPi8dSCug" documentation="Receber uma encomenda do fornecedor" name="businessOrder" dataType="_R3vNkDsAEfCzS-usCnYC3g" className="com.company.model.BusinessOrder"/>
-          </leftOperand>
-          <rightOperand xmi:type="expression:Expression" xmi:id="_cbarRUyKEfC2ApPi8dSCug" name="businessOrderInput.is_produto_software" content="businessOrderInput?.is_produto_software" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean">
-            <referencedElements xmi:type="process:ContractInput" xmi:id="_cbarRkyKEfC2ApPi8dSCug" name="businessOrderInput" type="COMPLEX" createMode="false"/>
-          </rightOperand>
-          <operator xmi:type="expression:Operator" xmi:id="_cbarR0yKEfC2ApPi8dSCug" type="JAVA_METHOD" expression="setIs_produto_software">
-            <inputTypes>java.lang.Boolean</inputTypes>
-          </operator>
-        </operations>
-        <operations xmi:type="expression:Operation" xmi:id="__Zv2YEyKEfC2ApPi8dSCug">
-          <leftOperand xmi:type="expression:Expression" xmi:id="__Zv2YUyKEfC2ApPi8dSCug" name="businessOrder" content="businessOrder" type="TYPE_VARIABLE" returnType="com.company.model.BusinessOrder">
-            <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_F-R6YEyLEfC2ApPi8dSCug" documentation="Receber uma encomenda do fornecedor" name="businessOrder" dataType="_R3vNkDsAEfCzS-usCnYC3g" className="com.company.model.BusinessOrder"/>
-          </leftOperand>
-          <rightOperand xmi:type="expression:Expression" xmi:id="__Zv2YkyKEfC2ApPi8dSCug" name="businessOrder.is_tem_documentacao" content="businessOrderInput?.is_tem_documentacao" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean">
-            <referencedElements xmi:type="process:ContractInput" xmi:id="_gVISUEyLEfC2ApPi8dSCug" name="businessOrderInput" type="COMPLEX" createMode="false"/>
-          </rightOperand>
-          <operator xmi:type="expression:Operator" xmi:id="__Zv2Y0yKEfC2ApPi8dSCug" type="JAVA_METHOD" expression="setIs_tem_documentacao">
-            <inputTypes>java.lang.Boolean</inputTypes>
-          </operator>
-        </operations>
-        <operations xmi:type="expression:Operation" xmi:id="_rJDH4EyLEfC2ApPi8dSCug">
-          <leftOperand xmi:type="expression:Expression" xmi:id="_rJDH4UyLEfC2ApPi8dSCug" name="businessOrder" content="businessOrder" type="TYPE_VARIABLE" returnType="com.company.model.BusinessOrder">
-            <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_r1k2sEyLEfC2ApPi8dSCug" documentation="Receber uma encomenda do fornecedor" name="businessOrder" dataType="_R3vNkDsAEfCzS-usCnYC3g" className="com.company.model.BusinessOrder"/>
-          </leftOperand>
-          <rightOperand xmi:type="expression:Expression" xmi:id="_rJDH4kyLEfC2ApPi8dSCug" name="businessOrder.is_guia_remessa" content="businessOrder?.is_guia_remessa" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean">
-            <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_0GN3MEyLEfC2ApPi8dSCug" documentation="Receber uma encomenda do fornecedor" name="businessOrder" dataType="_R3vNkDsAEfCzS-usCnYC3g" className="com.company.model.BusinessOrder"/>
-          </rightOperand>
-          <operator xmi:type="expression:Operator" xmi:id="_rJDH40yLEfC2ApPi8dSCug" type="JAVA_METHOD" expression="setIs_guia_remessa">
-            <inputTypes>java.lang.Boolean</inputTypes>
-          </operator>
-        </operations>
-        <loopCondition xmi:type="expression:Expression" xmi:id="_KvqbM0yKEfC2ApPi8dSCug" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-        <loopMaximum xmi:type="expression:Expression" xmi:id="_KvqbNEyKEfC2ApPi8dSCug" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
-        <cardinalityExpression xmi:type="expression:Expression" xmi:id="_KvqbNUyKEfC2ApPi8dSCug" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
-        <iteratorExpression xmi:type="expression:Expression" xmi:id="_KvqbN0yKEfC2ApPi8dSCug" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
-        <completionCondition xmi:type="expression:Expression" xmi:id="_KvqbNkyKEfC2ApPi8dSCug" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-        <formMapping xmi:type="process:FormMapping" xmi:id="_WAqOWUyKEfC2ApPi8dSCug">
-          <targetForm xmi:type="expression:Expression" xmi:id="_df1VoEyKEfC2ApPi8dSCug" name="newForm3" content="d4663285-5102-4cee-8747-c4eed8edbf52" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
-        </formMapping>
-        <contract xmi:type="process:Contract" xmi:id="_WAqOWEyKEfC2ApPi8dSCug">
-          <inputs xmi:type="process:ContractInput" xmi:id="_cbarQEyKEfC2ApPi8dSCug" name="businessOrderInput" type="COMPLEX" dataReference="businessOrder" createMode="false">
-            <inputs xmi:type="process:ContractInput" xmi:id="_cbarQUyKEfC2ApPi8dSCug" name="is_produto_software" type="BOOLEAN" createMode="false"/>
-          </inputs>
-        </contract>
-        <expectedDuration xmi:type="expression:Expression" xmi:id="_WAqOW0yKEfC2ApPi8dSCug" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
       </elements>
       <data xmi:type="process:BusinessObjectData" xmi:id="_wKoJUEr0EfCwiewHQQ8h8w" documentation="Receber uma encomenda do fornecedor" name="businessOrder" dataType="_R3vNkDsAEfCzS-usCnYC3g" className="com.company.model.BusinessOrder">
         <defaultValue xmi:type="expression:Expression" xmi:id="_wKoJUUr0EfCwiewHQQ8h8w" name="" content=""/>
@@ -708,10 +670,6 @@
         <children xmi:type="notation:Shape" xmi:id="_NUKDLUyIEfC2ApPi8dSCug" type="3005" element="_NUKDIEyIEfC2ApPi8dSCug" fontName="Segoe UI" fillColor="14334392" lineColor="10710316">
           <children xmi:type="notation:DecorationNode" xmi:id="_NUKqMEyIEfC2ApPi8dSCug" type="5005"/>
           <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NUKDLkyIEfC2ApPi8dSCug" x="3173" y="658" width="120" height="60"/>
-        </children>
-        <children xmi:type="notation:Shape" xmi:id="_WAqOXEyKEfC2ApPi8dSCug" type="3005" element="_WApnQEyKEfC2ApPi8dSCug" fontName="Segoe UI" fillColor="14334392" lineColor="10710316">
-          <children xmi:type="notation:DecorationNode" xmi:id="_WAqOXkyKEfC2ApPi8dSCug" type="5005"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WAqOXUyKEfC2ApPi8dSCug" x="1110" y="212" width="100" height="50"/>
         </children>
       </children>
       <styles xmi:type="notation:DescriptionStyle" xmi:id="_R3vNpDsAEfCzS-usCnYC3g"/>

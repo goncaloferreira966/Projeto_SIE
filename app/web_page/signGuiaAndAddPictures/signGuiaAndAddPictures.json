@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "6a4dc4e5-6829-499e-98c1-4969038b02db",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1750283597742,
+  "lastUpdate" : 1750286966007,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -274,8 +274,8 @@
                           "value" : false
                         },
                         "hidden" : {
-                          "type" : "expression",
-                          "value" : "!businessOrder.is_tem_documentacao"
+                          "type" : "constant",
+                          "value" : true
                         },
                         "cssClasses" : {
                           "type" : "constant",
@@ -296,6 +296,14 @@
                         "value" : {
                           "type" : "variable",
                           "value" : "businessOrder.is_tem_documentacao"
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : false
                         }
                       },
                       "reference" : "3fa690ff-8f7b-4095-a806-c94a50f26a6a",
@@ -781,7 +789,7 @@
                         },
                         "required" : {
                           "type" : "constant",
-                          "value" : false
+                          "value" : true
                         },
                         "allowHTML" : {
                           "type" : "constant",
@@ -1140,8 +1148,8 @@
                           "value" : false
                         },
                         "hidden" : {
-                          "type" : "expression",
-                          "value" : "!businessOrder.var1_string"
+                          "type" : "constant",
+                          "value" : true
                         },
                         "cssClasses" : {
                           "type" : "constant",
@@ -1162,6 +1170,18 @@
                         "dimension" : {
                           "type" : "constant",
                           "value" : 12
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 4
                         }
                       },
                       "reference" : "b3ceebfb-f9eb-460e-88ec-ca3f7771d364",
@@ -1594,7 +1614,7 @@
                         },
                         "required" : {
                           "type" : "constant",
-                          "value" : false
+                          "value" : true
                         },
                         "allowHTML" : {
                           "type" : "constant",

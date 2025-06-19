@@ -4,7 +4,7 @@
   "type" : "container",
   "custom" : false,
   "modelVersion" : "2.6",
-  "lastUpdate" : 1748356870018,
+  "lastUpdate" : 1750365698047,
   "description" : "Group of widgets used to define the arrangement of the page elements. Its content can be repeated over an array",
   "template" : "@pbContainer.tpl.html",
   "properties" : [

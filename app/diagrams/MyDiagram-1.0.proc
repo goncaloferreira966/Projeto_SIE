@@ -346,17 +346,6 @@
             <inputTypes>java.lang.Boolean</inputTypes>
           </operator>
         </operations>
-        <operations xmi:type="expression:Operation" xmi:id="_xg-y8EyOEfCfvtexce43cQ">
-          <leftOperand xmi:type="expression:Expression" xmi:id="_xg-y8UyOEfCfvtexce43cQ" name="businessOrder" content="businessOrder" type="TYPE_VARIABLE" returnType="com.company.model.BusinessOrder">
-            <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_x2o54EyOEfCfvtexce43cQ" documentation="Receber uma encomenda do fornecedor" name="businessOrder" dataType="_R3vNkDsAEfCzS-usCnYC3g" className="com.company.model.BusinessOrder"/>
-          </leftOperand>
-          <rightOperand xmi:type="expression:Expression" xmi:id="_xg-y8kyOEfCfvtexce43cQ" name="newScript()" content="businessOrder?.is_recebido_por" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.time.OffsetDateTime">
-            <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_vvApkEyPEfCfvtexce43cQ" documentation="Receber uma encomenda do fornecedor" name="businessOrder" dataType="_R3vNkDsAEfCzS-usCnYC3g" className="com.company.model.BusinessOrder"/>
-          </rightOperand>
-          <operator xmi:type="expression:Operator" xmi:id="_xg-y80yOEfCfvtexce43cQ" type="JAVA_METHOD" expression="setRecebido_em">
-            <inputTypes>java.time.OffsetDateTime</inputTypes>
-          </operator>
-        </operations>
         <loopCondition xmi:type="expression:Expression" xmi:id="_ZXhmcTsFEfCzS-usCnYC3g" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
         <loopMaximum xmi:type="expression:Expression" xmi:id="_ZXhmcjsFEfCzS-usCnYC3g" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
         <cardinalityExpression xmi:type="expression:Expression" xmi:id="_ZXhmczsFEfCzS-usCnYC3g" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
@@ -368,9 +357,6 @@
         <contract xmi:type="process:Contract" xmi:id="_IY8GWEyIEfC2ApPi8dSCug">
           <inputs xmi:type="process:ContractInput" xmi:id="_p_kscEyNEfCfvtexce43cQ" name="businessOrderInput" type="COMPLEX" dataReference="businessOrder" createMode="false">
             <inputs xmi:type="process:ContractInput" xmi:id="_p_kscUyNEfCfvtexce43cQ" name="is_via_guia_entregue" type="BOOLEAN" createMode="false"/>
-            <inputs xmi:type="process:ContractInput" xmi:id="_sdMwAEyOEfCfvtexce43cQ" name="recebido_em" type="OFFSETDATETIME">
-              <mapping xmi:type="process:ContractInputMapping" xmi:id="_sdMwAUyOEfCfvtexce43cQ"/>
-            </inputs>
           </inputs>
         </contract>
         <expectedDuration xmi:type="expression:Expression" xmi:id="_IY8GW0yIEfC2ApPi8dSCug" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
@@ -396,11 +382,13 @@
         <iteratorExpression xmi:type="expression:Expression" xmi:id="_alOIpzsFEfCzS-usCnYC3g" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
         <completionCondition xmi:type="expression:Expression" xmi:id="_alOIpjsFEfCzS-usCnYC3g" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
         <formMapping xmi:type="process:FormMapping" xmi:id="_NUKDKkyIEfC2ApPi8dSCug">
-          <targetForm xmi:type="expression:Expression" xmi:id="_zLrMcEyJEfC2ApPi8dSCug" name="newForm2" content="978aebe4-2c83-47d3-a1bc-81fe06317675" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+          <targetForm xmi:type="expression:Expression" xmi:id="_E9gTcE1HEfCo_IWfKKhhfw" name="newForm5" content="332d969b-303d-4c81-97ca-ce017549fdd7" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
         </formMapping>
         <contract xmi:type="process:Contract" xmi:id="_NUKDKUyIEfC2ApPi8dSCug">
           <inputs xmi:type="process:ContractInput" xmi:id="_TcTQoEyJEfC2ApPi8dSCug" name="businessOrderInput" type="COMPLEX" dataReference="businessOrder" createMode="false">
-            <inputs xmi:type="process:ContractInput" xmi:id="_TcTQoUyJEfC2ApPi8dSCug" name="var6_int" type="INTEGER" createMode="false"/>
+            <inputs xmi:type="process:ContractInput" xmi:id="__69moE1GEfCo_IWfKKhhfw" name="is_recebido_por">
+              <mapping xmi:type="process:ContractInputMapping" xmi:id="__6-NsE1GEfCo_IWfKKhhfw"/>
+            </inputs>
           </inputs>
         </contract>
         <expectedDuration xmi:type="expression:Expression" xmi:id="_NUKDLEyIEfC2ApPi8dSCug" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>

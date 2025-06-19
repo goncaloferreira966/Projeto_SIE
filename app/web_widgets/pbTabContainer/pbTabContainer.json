@@ -4,7 +4,7 @@
   "type" : "container",
   "custom" : false,
   "modelVersion" : "2.6",
-  "lastUpdate" : 1748356870649,
+  "lastUpdate" : 1750365698023,
   "description" : "Group of widgets, inside a Tabs container",
   "template" : "@pbTabContainer.tpl.html",
   "properties" : [

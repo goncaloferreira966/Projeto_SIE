@@ -1,0 +1,6 @@
+== Migration notes (June 19, 2025 at 9:41:57 PM WEST)
+
+=== Updates
+
+* `app/.gitignore` file has been updated.
+

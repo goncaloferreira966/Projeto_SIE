@@ -4,7 +4,7 @@
   "type" : "widget",
   "custom" : false,
   "modelVersion" : "2.6",
-  "lastUpdate" : 1748356870255,
+  "lastUpdate" : 1750365697985,
   "description" : "Link to display or download a document",
   "template" : "@pbFileViewer.tpl.html",
   "controller" : "@pbFileViewer.ctrl.js",

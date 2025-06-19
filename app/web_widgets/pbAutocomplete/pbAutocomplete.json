@@ -4,7 +4,7 @@
   "type" : "widget",
   "custom" : false,
   "modelVersion" : "2.6",
-  "lastUpdate" : 1748356869675,
+  "lastUpdate" : 1750365697961,
   "description" : "Input field with content completion from a given list",
   "template" : "@pbAutocomplete.tpl.html",
   "controller" : "@pbAutocomplete.ctrl.js",

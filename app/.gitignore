@@ -1,1 +1,15 @@
+
 /target/
+
+
+/src-providedGroovy
+/h2_database
+/web_widgets/pb*/
+/web_widgets/.metadata
+/web_fragments/.metadata
+/web_page/.metadata
+/web_page/*/js
+/web_fragments/*/*.js
+/web_widgets/*/*.js
+!/web_widgets/*/*.ctrl.js
+/database_connectors_properties

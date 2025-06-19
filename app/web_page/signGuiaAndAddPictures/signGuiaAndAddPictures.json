@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "6a4dc4e5-6829-499e-98c1-4969038b02db",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1750286966007,
+  "lastUpdate" : 1750365980681,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -185,149 +185,6 @@
                         },
                         "hidden" : {
                           "type" : "expression",
-                          "value" : "!businessOrder.is_produto_software"
-                        },
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "disabled" : {
-                          "type" : "constant",
-                          "value" : true
-                        },
-                        "label" : {
-                          "type" : "interpolation",
-                          "value" : "Is_produto_software"
-                        },
-                        "dimension" : {
-                          "type" : "constant",
-                          "value" : 12
-                        },
-                        "value" : {
-                          "type" : "variable",
-                          "value" : "businessOrder.is_produto_software"
-                        }
-                      },
-                      "reference" : "e55ebf3d-c6c0-4acc-8d72-ec5c02f9a566",
-                      "hasValidationError" : false,
-                      "id" : "pbCheckbox",
-                      "description" : ""
-                    }
-                  ],
-                  [
-                    {
-                      "type" : "component",
-                      "dimension" : {
-                        "md" : 12,
-                        "sm" : 12,
-                        "xs" : 12,
-                        "lg" : 12
-                      },
-                      "propertyValues" : {
-                        "labelHidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "hidden" : {
-                          "type" : "expression",
-                          "value" : "!businessOrder.is_encomenda_danificada"
-                        },
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "disabled" : {
-                          "type" : "constant",
-                          "value" : true
-                        },
-                        "label" : {
-                          "type" : "interpolation",
-                          "value" : "Is_encomenda_danificada"
-                        },
-                        "dimension" : {
-                          "type" : "constant",
-                          "value" : 12
-                        },
-                        "value" : {
-                          "type" : "variable",
-                          "value" : "businessOrder.is_encomenda_danificada"
-                        }
-                      },
-                      "reference" : "4476c2c1-955a-45d4-a499-b08403a4fe90",
-                      "hasValidationError" : false,
-                      "id" : "pbCheckbox",
-                      "description" : ""
-                    }
-                  ],
-                  [
-                    {
-                      "type" : "component",
-                      "dimension" : {
-                        "md" : 12,
-                        "sm" : 12,
-                        "xs" : 12,
-                        "lg" : 12
-                      },
-                      "propertyValues" : {
-                        "labelHidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "hidden" : {
-                          "type" : "constant",
-                          "value" : true
-                        },
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "disabled" : {
-                          "type" : "constant",
-                          "value" : true
-                        },
-                        "label" : {
-                          "type" : "interpolation",
-                          "value" : "Is_tem_documentacao"
-                        },
-                        "dimension" : {
-                          "type" : "constant",
-                          "value" : 12
-                        },
-                        "value" : {
-                          "type" : "variable",
-                          "value" : "businessOrder.is_tem_documentacao"
-                        },
-                        "required" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "allowHTML" : {
-                          "type" : "constant",
-                          "value" : false
-                        }
-                      },
-                      "reference" : "3fa690ff-8f7b-4095-a806-c94a50f26a6a",
-                      "hasValidationError" : false,
-                      "id" : "pbCheckbox",
-                      "description" : ""
-                    }
-                  ],
-                  [
-                    {
-                      "type" : "component",
-                      "dimension" : {
-                        "md" : 12,
-                        "sm" : 12,
-                        "xs" : 12,
-                        "lg" : 12
-                      },
-                      "propertyValues" : {
-                        "labelHidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "hidden" : {
-                          "type" : "expression",
                           "value" : "!businessOrder.is_guia_remessa"
                         },
                         "cssClasses" : {
@@ -340,7 +197,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Is_guia_remessa"
+                          "value" : "Assinar Guia de Remessa"
                         },
                         "dimension" : {
                           "type" : "constant",
@@ -349,6 +206,14 @@
                         "value" : {
                           "type" : "variable",
                           "value" : "businessOrder.is_guia_remessa"
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : false
                         }
                       },
                       "reference" : "df4142d7-b7dc-44c1-8bd1-618c96b0c9ce",

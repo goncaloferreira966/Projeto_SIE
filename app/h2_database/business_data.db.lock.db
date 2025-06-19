@@ -1,6 +1,6 @@
 #FileLock
-#Wed Jun 18 23:43:27 WEST 2025
-server=192.168.1.73\:64555
-hostName=JoelSB.Home
+#Thu Jun 19 21:42:04 WEST 2025
+server=localhost\:50882
+hostName=localhost
 method=file
-id=1978536247a23559c6559943abc873a08a2901b8ebe
+id=19789ed5f0e30af1fd20bad35b7f97ca097494a9ab9

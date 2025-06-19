@@ -4,7 +4,7 @@
   "type" : "widget",
   "custom" : false,
   "modelVersion" : "2.6",
-  "lastUpdate" : 1748356870004,
+  "lastUpdate" : 1750365698028,
   "description" : "Set of checkboxes for options. The user selects zero or more",
   "template" : "@pbChecklist.tpl.html",
   "controller" : "@pbChecklist.ctrl.js",

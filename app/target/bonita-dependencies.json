@@ -238,7 +238,91 @@
     },
     "jarEntry" : "database-datasource.impl"
   } ],
-  "filterImplementations" : [ ],
+  "filterImplementations" : [ {
+    "type" : "ACTOR_FILTER",
+    "className" : "org.bonitasoft.actorfilter.initiator.ProcessInitiatorUserFilter",
+    "implementationId" : "bonita-actorfilter-initiator-impl",
+    "implementationVersion" : "1.0.0",
+    "definitionId" : "bonita-actorfilter-initiator",
+    "definitionVersion" : "1.0",
+    "artifact" : {
+      "groupId" : "org.bonitasoft.actorfilter",
+      "artifactId" : "bonita-actorfilter-initiator",
+      "version" : "1.0.0",
+      "file" : "/Users/goncaloferreira/.m2/repository/org/bonitasoft/actorfilter/bonita-actorfilter-initiator/1.0.0/bonita-actorfilter-initiator-1.0.0.jar"
+    },
+    "jarEntry" : "bonita-actorfilter-initiator.impl"
+  }, {
+    "type" : "ACTOR_FILTER",
+    "className" : "org.bonitasoft.actorfilter.custom.user.info.CustomUserInfoUserFilter",
+    "implementationId" : "bonita-actorfilter-custom-user-info-impl",
+    "implementationVersion" : "1.0.0",
+    "definitionId" : "bonita-actorfilter-custom-user-info",
+    "definitionVersion" : "1.0.0",
+    "artifact" : {
+      "groupId" : "org.bonitasoft.actorfilter",
+      "artifactId" : "bonita-actorfilter-custom-user-info",
+      "version" : "1.0.0",
+      "file" : "/Users/goncaloferreira/.m2/repository/org/bonitasoft/actorfilter/bonita-actorfilter-custom-user-info/1.0.0/bonita-actorfilter-custom-user-info-1.0.0.jar"
+    },
+    "jarEntry" : "bonita-actorfilter-custom-user-info.impl"
+  }, {
+    "type" : "ACTOR_FILTER",
+    "className" : "org.bonitasoft.actorfilter.initiator.manager.ProcessInitiatorManagerUserFilter",
+    "implementationId" : "bonita-actorfilter-initiator-manager-impl",
+    "implementationVersion" : "1.0.0",
+    "definitionId" : "bonita-actorfilter-initiator-manager",
+    "definitionVersion" : "1.0",
+    "artifact" : {
+      "groupId" : "org.bonitasoft.actorfilter",
+      "artifactId" : "bonita-actorfilter-initiator-manager",
+      "version" : "1.0.0",
+      "file" : "/Users/goncaloferreira/.m2/repository/org/bonitasoft/actorfilter/bonita-actorfilter-initiator-manager/1.0.0/bonita-actorfilter-initiator-manager-1.0.0.jar"
+    },
+    "jarEntry" : "bonita-actorfilter-initiator-manager.impl"
+  }, {
+    "type" : "ACTOR_FILTER",
+    "className" : "org.bonitasoft.actorfilter.identity.SameTaskUserActorFilter",
+    "implementationId" : "bonita-actorfilter-same-task-user-impl",
+    "implementationVersion" : "1.0.0",
+    "definitionId" : "bonita-actorfilter-same-task-user",
+    "definitionVersion" : "1.0.0",
+    "artifact" : {
+      "groupId" : "org.bonitasoft.actorfilter",
+      "artifactId" : "bonita-actorfilter-same-task-user",
+      "version" : "1.0.0",
+      "file" : "/Users/goncaloferreira/.m2/repository/org/bonitasoft/actorfilter/bonita-actorfilter-same-task-user/1.0.0/bonita-actorfilter-same-task-user-1.0.0.jar"
+    },
+    "jarEntry" : "bonita-actorfilter-same-task-user.impl"
+  }, {
+    "type" : "ACTOR_FILTER",
+    "className" : "org.bonitasoft.actorfilter.identity.SingleUserActorFilter",
+    "implementationId" : "bonita-actorfilter-single-user-impl",
+    "implementationVersion" : "1.0.0",
+    "definitionId" : "bonita-actorfilter-single-user",
+    "definitionVersion" : "1.0.0",
+    "artifact" : {
+      "groupId" : "org.bonitasoft.actorfilter",
+      "artifactId" : "bonita-actorfilter-single-user",
+      "version" : "1.0.0",
+      "file" : "/Users/goncaloferreira/.m2/repository/org/bonitasoft/actorfilter/bonita-actorfilter-single-user/1.0.0/bonita-actorfilter-single-user-1.0.0.jar"
+    },
+    "jarEntry" : "bonita-actorfilter-single-user.impl"
+  }, {
+    "type" : "ACTOR_FILTER",
+    "className" : "org.bonitasoft.actorfilter.identity.UserManagerActorFilter",
+    "implementationId" : "bonita-actorfilter-user-manager-impl",
+    "implementationVersion" : "1.0.0",
+    "definitionId" : "bonita-actorfilter-user-manager",
+    "definitionVersion" : "1.0.0",
+    "artifact" : {
+      "groupId" : "org.bonitasoft.actorfilter",
+      "artifactId" : "bonita-actorfilter-user-manager",
+      "version" : "1.0.0",
+      "file" : "/Users/goncaloferreira/.m2/repository/org/bonitasoft/actorfilter/bonita-actorfilter-user-manager/1.0.0/bonita-actorfilter-user-manager-1.0.0.jar"
+    },
+    "jarEntry" : "bonita-actorfilter-user-manager.impl"
+  } ],
   "connectorDefinitions" : [ {
     "definitionId" : "database-mssqlserver",
     "definitionVersion" : "1.2.1",
@@ -410,7 +494,67 @@
     },
     "jarEntry" : "database-jdbc.def"
   } ],
-  "filterDefinitions" : [ ],
+  "filterDefinitions" : [ {
+    "definitionId" : "bonita-actorfilter-initiator",
+    "definitionVersion" : "1.0",
+    "artifact" : {
+      "groupId" : "org.bonitasoft.actorfilter",
+      "artifactId" : "bonita-actorfilter-initiator",
+      "version" : "1.0.0",
+      "file" : "/Users/goncaloferreira/.m2/repository/org/bonitasoft/actorfilter/bonita-actorfilter-initiator/1.0.0/bonita-actorfilter-initiator-1.0.0.jar"
+    },
+    "jarEntry" : "bonita-actorfilter-initiator.def"
+  }, {
+    "definitionId" : "bonita-actorfilter-custom-user-info",
+    "definitionVersion" : "1.0.0",
+    "artifact" : {
+      "groupId" : "org.bonitasoft.actorfilter",
+      "artifactId" : "bonita-actorfilter-custom-user-info",
+      "version" : "1.0.0",
+      "file" : "/Users/goncaloferreira/.m2/repository/org/bonitasoft/actorfilter/bonita-actorfilter-custom-user-info/1.0.0/bonita-actorfilter-custom-user-info-1.0.0.jar"
+    },
+    "jarEntry" : "bonita-actorfilter-custom-user-info.def"
+  }, {
+    "definitionId" : "bonita-actorfilter-initiator-manager",
+    "definitionVersion" : "1.0",
+    "artifact" : {
+      "groupId" : "org.bonitasoft.actorfilter",
+      "artifactId" : "bonita-actorfilter-initiator-manager",
+      "version" : "1.0.0",
+      "file" : "/Users/goncaloferreira/.m2/repository/org/bonitasoft/actorfilter/bonita-actorfilter-initiator-manager/1.0.0/bonita-actorfilter-initiator-manager-1.0.0.jar"
+    },
+    "jarEntry" : "bonita-actorfilter-initiator-manager.def"
+  }, {
+    "definitionId" : "bonita-actorfilter-same-task-user",
+    "definitionVersion" : "1.0.0",
+    "artifact" : {
+      "groupId" : "org.bonitasoft.actorfilter",
+      "artifactId" : "bonita-actorfilter-same-task-user",
+      "version" : "1.0.0",
+      "file" : "/Users/goncaloferreira/.m2/repository/org/bonitasoft/actorfilter/bonita-actorfilter-same-task-user/1.0.0/bonita-actorfilter-same-task-user-1.0.0.jar"
+    },
+    "jarEntry" : "bonita-actorfilter-same-task-user.def"
+  }, {
+    "definitionId" : "bonita-actorfilter-single-user",
+    "definitionVersion" : "1.0.0",
+    "artifact" : {
+      "groupId" : "org.bonitasoft.actorfilter",
+      "artifactId" : "bonita-actorfilter-single-user",
+      "version" : "1.0.0",
+      "file" : "/Users/goncaloferreira/.m2/repository/org/bonitasoft/actorfilter/bonita-actorfilter-single-user/1.0.0/bonita-actorfilter-single-user-1.0.0.jar"
+    },
+    "jarEntry" : "bonita-actorfilter-single-user.def"
+  }, {
+    "definitionId" : "bonita-actorfilter-user-manager",
+    "definitionVersion" : "1.0.0",
+    "artifact" : {
+      "groupId" : "org.bonitasoft.actorfilter",
+      "artifactId" : "bonita-actorfilter-user-manager",
+      "version" : "1.0.0",
+      "file" : "/Users/goncaloferreira/.m2/repository/org/bonitasoft/actorfilter/bonita-actorfilter-user-manager/1.0.0/bonita-actorfilter-user-manager-1.0.0.jar"
+    },
+    "jarEntry" : "bonita-actorfilter-user-manager.def"
+  } ],
   "restApiExtensions" : [ ],
   "pages" : [ ],
   "forms" : [ ],

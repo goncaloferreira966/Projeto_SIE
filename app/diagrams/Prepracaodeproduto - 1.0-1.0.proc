@@ -248,19 +248,19 @@
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_SWyRIDsREfCFwZ2i48Dr6Q" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_SWyRIjsREfCFwZ2i48Dr6Q" name="" content="" returnTypeFixed="true"/>
         </elements>
-        <elements xmi:type="process:Task" xmi:id="_B1NoME3IEfCRZeFygNlKAA" name="Verificar se o produto é para cliente ouconsumo interno" outgoing="_86foYE3MEfCRZeFygNlKAA" incoming="_DyHZwE3IEfCRZeFygNlKAA" actor="__ebUQE1JEfCo_IWfKKhhfw" priority="1">
+        <elements xmi:type="process:Task" xmi:id="_B1NoME3IEfCRZeFygNlKAA" name="Verificar se o produto é para cliente ou consumo interno" outgoing="_86foYE3MEfCRZeFygNlKAA" incoming="_DyHZwE3IEfCRZeFygNlKAA" actor="__ebUQE1JEfCo_IWfKKhhfw" priority="1">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_B1OPQE3IEfCRZeFygNlKAA" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_B1OPQU3IEfCRZeFygNlKAA" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_B1OPQk3IEfCRZeFygNlKAA" name="" content="" returnTypeFixed="true"/>
-          <operations xmi:type="expression:Operation" xmi:id="_3RbRoE3NEfCRZeFygNlKAA">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_3RbRoU3NEfCRZeFygNlKAA" name="businessOrder" content="businessOrder" type="TYPE_VARIABLE" returnType="com.company.model.BusinessOrder">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_3RbRok3NEfCRZeFygNlKAA" name="businessOrder" dataType="_SPbr-DsREfCFwZ2i48Dr6Q" className="com.company.model.BusinessOrder"/>
+          <operations xmi:type="expression:Operation" xmi:id="_yMNO0E3OEfCRZeFygNlKAA">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_yMNO0U3OEfCRZeFygNlKAA" name="businessOrder" content="businessOrder" type="TYPE_VARIABLE" returnType="com.company.model.BusinessOrder">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_yMNO0k3OEfCRZeFygNlKAA" name="businessOrder" dataType="_SPbr-DsREfCFwZ2i48Dr6Q" className="com.company.model.BusinessOrder"/>
             </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_3RbRo03NEfCRZeFygNlKAA" name="businessOrderInput.cliente_id" content="businessOrderInput?.cliente_id" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-              <referencedElements xmi:type="process:ContractInput" xmi:id="_3RbRpE3NEfCRZeFygNlKAA" name="businessOrderInput" type="COMPLEX" createMode="false"/>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_yMNO003OEfCRZeFygNlKAA" name="businessOrderInput.is_consumo_interno" content="businessOrderInput?.is_consumo_interno" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_yMNO1E3OEfCRZeFygNlKAA" name="businessOrderInput" type="COMPLEX" createMode="false"/>
             </rightOperand>
-            <operator xmi:type="expression:Operator" xmi:id="_3RbRpU3NEfCRZeFygNlKAA" type="JAVA_METHOD" expression="setCliente_id">
-              <inputTypes>java.lang.String</inputTypes>
+            <operator xmi:type="expression:Operator" xmi:id="_yMNO1U3OEfCRZeFygNlKAA" type="JAVA_METHOD" expression="setIs_consumo_interno">
+              <inputTypes>java.lang.Boolean</inputTypes>
             </operator>
           </operations>
           <loopCondition xmi:type="expression:Expression" xmi:id="_B1OQ8U3IEfCRZeFygNlKAA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
@@ -269,11 +269,11 @@
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_B1OQ9E3IEfCRZeFygNlKAA" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_B1OQ9U3IEfCRZeFygNlKAA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <formMapping xmi:type="process:FormMapping" xmi:id="_B1OQ9k3IEfCRZeFygNlKAA">
-            <targetForm xmi:type="expression:Expression" xmi:id="_pe1g8E3MEfCRZeFygNlKAA" name="newForm12" content="11aac233-d9a2-4a1c-85a5-d0d49d713269" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="_zpYXcE3OEfCRZeFygNlKAA" name="consumointerno2" content="60ecdece-14a8-48d9-ae19-799f22b82bdb" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_B1OQ-E3IEfCRZeFygNlKAA">
-            <inputs xmi:type="process:ContractInput" xmi:id="_3RZccE3NEfCRZeFygNlKAA" name="businessOrderInput" type="COMPLEX" dataReference="businessOrder" createMode="false">
-              <inputs xmi:type="process:ContractInput" xmi:id="_3RaDgE3NEfCRZeFygNlKAA" name="cliente_id" createMode="false"/>
+            <inputs xmi:type="process:ContractInput" xmi:id="_yMMAsE3OEfCRZeFygNlKAA" name="businessOrderInput" type="COMPLEX" dataReference="businessOrder" createMode="false">
+              <inputs xmi:type="process:ContractInput" xmi:id="_yMMnwE3OEfCRZeFygNlKAA" name="is_consumo_interno" type="BOOLEAN" createMode="false"/>
             </inputs>
           </contract>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_B1OQ-U3IEfCRZeFygNlKAA" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
@@ -463,21 +463,21 @@
         <defaultValue xmi:type="expression:Expression" xmi:id="_ZKn98E1QEfCo_IWfKKhhfw" name="Receção do Produto para Aprovisionamento" content="Receção do Produto para Aprovisionamento"/>
       </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_SVc0YDsREfCFwZ2i48Dr6Q">
-        <targetForm xmi:type="expression:Expression" xmi:id="_5d-BsE3NEfCRZeFygNlKAA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+        <targetForm xmi:type="expression:Expression" xmi:id="_cg9N4E3PEfCRZeFygNlKAA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_SVc0YjsREfCFwZ2i48Dr6Q">
         <targetForm xmi:type="expression:Expression" xmi:id="_SVc0YzsREfCFwZ2i48Dr6Q" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </overviewFormMapping>
       <connections xmi:type="process:SequenceFlow" xmi:id="_SfBnIDsREfCFwZ2i48Dr6Q" name="Cliente" target="_SZBs0DsREfCFwZ2i48Dr6Q" source="_SX1aADsREfCFwZ2i48Dr6Q">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_SfBnITsREfCFwZ2i48Dr6Q"/>
-        <condition xmi:type="expression:Expression" xmi:id="_SfBnIjsREfCFwZ2i48Dr6Q" name="newScript()" content="businessOrder.cliente_id == &quot;Cliente&quot;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean" returnTypeFixed="true">
-          <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_-HH4ME1LEfCo_IWfKKhhfw" name="businessOrder" dataType="_SPbr-DsREfCFwZ2i48Dr6Q" className="com.company.model.BusinessOrder"/>
+        <condition xmi:type="expression:Expression" xmi:id="_SfBnIjsREfCFwZ2i48Dr6Q" name="newScript()" content="businessOrder.is_consumo_interno == false" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean" returnTypeFixed="true">
+          <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_-IyVkE3OEfCRZeFygNlKAA" name="businessOrder" dataType="_SPbr-DsREfCFwZ2i48Dr6Q" className="com.company.model.BusinessOrder"/>
         </condition>
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_SfQ3sDsREfCFwZ2i48Dr6Q" name="Consumo Interno" target="_SZIagDsREfCFwZ2i48Dr6Q" source="_SX1aADsREfCFwZ2i48Dr6Q">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_SfQ3sTsREfCFwZ2i48Dr6Q"/>
-        <condition xmi:type="expression:Expression" xmi:id="_SfRewDsREfCFwZ2i48Dr6Q" name="newScript()" content="businessOrder.cliente_id == &quot;Interno&quot;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean" returnTypeFixed="true">
-          <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_8GpOME1LEfCo_IWfKKhhfw" name="businessOrder" dataType="_SPbr-DsREfCFwZ2i48Dr6Q" className="com.company.model.BusinessOrder"/>
+        <condition xmi:type="expression:Expression" xmi:id="_SfRewDsREfCFwZ2i48Dr6Q" name="newScript()" content="businessOrder.is_consumo_interno == true" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean" returnTypeFixed="true">
+          <referencedElements xmi:type="process:BusinessObjectData" xmi:id="__sj1cE3OEfCRZeFygNlKAA" name="businessOrder" dataType="_SPbr-DsREfCFwZ2i48Dr6Q" className="com.company.model.BusinessOrder"/>
         </condition>
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_SfikgDsREfCFwZ2i48Dr6Q" target="_a9VZEE1NEfCo_IWfKKhhfw" source="_SZIagDsREfCFwZ2i48Dr6Q">
